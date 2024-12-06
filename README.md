@@ -48,7 +48,7 @@ https://www.oracle.com/java/technologies/downloads/
 https://jmeter.apache.org/download_jmeter.cgi
 
 Click =>Binaries  
-=>**apache-jmeter-5.5.zip**
+=>**apache-jmeter-5.6.3.zip**
 
 **We use BlazeMeter to generate JMX files**  
 https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi?hl=en
