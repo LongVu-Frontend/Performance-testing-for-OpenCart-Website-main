@@ -96,23 +96,19 @@ Testplan > Add > Threads (Users) > Thread Group (this might vary dependent on th
 
   ### List of API
 
-  - [http://localhost/opencart-4.0.2.3/upload/index.php?route=common/home&language=en-gb](http://localhost/opencart-4.0.2.3/upload/index.php?route=common/home&language=en-gb)
-  - [http://localhost/opencart-4.0.2.3/upload/index.php?route=product/product&language=en-gb&product_id=40](http://localhost/opencart-4.0.2.3/upload/index.php?route=product/product&language=en-gb&product_id=40)
-  - [http://localhost/opencart-4.0.2.3/upload/index.php?route=checkout/cart&language=en-gb](https://www.opencart.com/index.php?route=marketplace/extension)
-  - [http://localhost/opencart-4.0.2.3/upload/index.php?route=information/information&language=en-gb&information_id=1](http://localhost/opencart-4.0.2.3/upload/index.php?route=information/information&language=en-gb&information_id=1)
-  - [http://localhost/opencart-4.0.2.3/upload/index.php?route=account/login&language=en-gb](http://localhost/opencart-4.0.2.3/upload/index.php?route=account/login&language=en-gb)
+  - [http://localhost/Classic-Groove-main/](http://localhost/Classic-Groove-main/)
 
   **OR**
 
   ### Load the JMeter Script
 
   - File > Open (CTRL + O)
-  - Locate the "OPENCART_T1.jmx" file contained on this repo
-  - Continue open OPENCART_T1 to OPENCART_T6
+  - Locate the "Classic-Groove_T1.jmx" file contained on this repo
+  - Continue open Classic-Groove_T1 to Classic-Groove_T6
   - Open those file
   - The Test Plan will be loaded
 
-  ![user_image](https://github.com/user-attachments/assets/32d2695d-32f9-4725-9ceb-c408590509fb)
+  ![image](https://github.com/user-attachments/assets/d9557770-d348-4302-bb88-368176737051)
 
 # Test execution (from the Terminal)
 
@@ -127,36 +123,36 @@ Testplan > Add > Threads (Users) > Thread Group (this might vary dependent on th
 - **l**: output file with results
 
 ```bash
-  jmeter -n -t  OPENCART_T1.jmx -l OPENCART_T1.csv
+  jmeter -n -t  Classic-Groove_T1.jmx -l Classic-Groove_T1.csv
 ```
 
-![csv](https://github.com/user-attachments/assets/0fac9f9c-10fe-4ba3-ba3d-ceead909c7ac)
+![image](https://github.com/user-attachments/assets/dd9644f1-37af-4fa2-b0f0-daf247c916f9)
 
 ### Make jtl file
 
 ```bash
-  jmeter -n -t  OPENCART_T1.jmx -l OPENCART_T1.jtl
+  jmeter -n -t  Classic-Groove_T1.jmx -l Classic-Groove_T1.jtl
 ```
 
 Then continue to upgrade Threads(1 to 6) by keeping Ramp-up Same.
 
-![ter](https://github.com/user-attachments/assets/10a43f94-1133-4a6a-b301-de817e787da2)
-![d](https://user-images.githubusercontent.com/92669932/189541861-ce9b4d40-3edb-408b-affd-c3c98020fddf.jpg)
+![image](https://github.com/user-attachments/assets/26ed0554-9e9f-4fdd-8f2d-868f94a5b11d)
+![image](https://github.com/user-attachments/assets/7d6d2dcb-76c7-4afd-94ea-88071ccafe63)
 
 After completing this command
 
 ### Make html file
 
 ```bash
-jmeter -g report\OPENCART_T1.jtl -o OPENCART_T1.html
+jmeter -g report\Classic-Groove_T1.jtl -o Classic-Groove_T1.html
 ```
 
 - **g**: jtl results file
 
 - **o**: path to output folder
 
-![ter2](https://github.com/user-attachments/assets/91ac0e65-c5a4-4317-ba35-b0cfb4df50c7)
-![folder](https://github.com/user-attachments/assets/6eb952ec-161e-456e-a1a7-3de80e44f943)
+![image](https://github.com/user-attachments/assets/9b794dfd-b30e-4fbd-bb69-d710adb712df)
+![image](https://github.com/user-attachments/assets/09dfc46f-4b58-46c1-9ecc-eee0375ed896)
 
 # HTML Report
 
